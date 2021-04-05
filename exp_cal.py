@@ -1,7 +1,5 @@
 ''' This program is about to find our expense calculations'''
-
 import datetime
-
 expense_details = {} # Expense details stored in dictionary
 #salary = 0
 total = 0            #Total expenditure amount
@@ -49,21 +47,19 @@ def expanse_calculator():
         if d_key in expense_details.keys():
             e_price = e_name[1]
             if temp_sal >= e_price:
-                expense_details[d_key] = e_price
-                temp_sal -= e_price
-            else:
-                print("Insufficint funds")
-                break
-        else:
-            d_key in expense_details.keys():
-            e_price = e_name[1]
-            if temp_sal >= e_price:
                 expense_details[d_key] += e_price
                 temp_sal -= e_price
             else:
                 print("Insufficint funds")
                 break
-            
+        else:
+            e_price = e_name[1]
+            if temp_sal >= e_price:
+                expense_details[d_key] = e_price
+                temp_sal -= e_price
+            else:
+                print("Insufficint funds")
+                break
         total=sum(expense_details.values())
         while True:
             ch_ip = input("If you want to add any more expenditure [YES|NO]:")
@@ -81,7 +77,6 @@ def expanse_calculator():
         print("Insufficint funds")
     return
 expanse_calculator()
-
 print(f"\n{' '*17}EXPENDITURE DETAILS\n{datetime.date.today()}")
 print(f"Salary{' '*(20-len('Salary'))}:{' '*15}{Salary:.2f}/-\n{'-'*75}")
 for exp_key,exp_value in expense_details.items():
