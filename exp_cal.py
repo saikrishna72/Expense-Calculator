@@ -46,7 +46,7 @@ def expanse_calculator():
     while temp_sal > 0:
         e_name = expense_validation()
         d_key = e_name[0]
-        if :
+        if d_key in expense_details.keys():
             e_price = e_name[1]
             if temp_sal >= e_price:
                 expense_details[d_key] = e_price
