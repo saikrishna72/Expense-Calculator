@@ -20,6 +20,7 @@ A budget calculator to measure our Monthly expenses and incomes.
 
 --> If the Expenditure name is repeated the Amount will be added to the Previous Expname and will show the total amount for that name and wll show in the balance sheet
 
+--> If the User selects Yes it will add the further Expenditure details if Not ie No calculation done for the given input output will be shown in the result.
 
 Modules we imported:
 
