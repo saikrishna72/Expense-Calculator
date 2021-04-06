@@ -1,7 +1,6 @@
 ''' This program is about to find our expense calculations'''
 import datetime
 expense_details = {} # Expense details stored in dictionary
-#salary = 0
 total = 0            #Total expenditure amount
 def salary_validation():
     '''This function is used for salary validatiion'''
